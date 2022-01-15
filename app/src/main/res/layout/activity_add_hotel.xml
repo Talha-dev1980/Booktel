@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.AddHotel">
+
+    <ImageView
+        android:id="@+id/appProfile"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/ic_hotel" />
+
+    <TextView
+        android:id="@+id/tvAppname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appProfile"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppname"
+        android:gravity="center"
+
+        android:text="@string/RegisterHotel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blankfield"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edthtlName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/blankfield"
+            android:hint="@string/htl_name"
+            android:inputType="text"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blankfield"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_user_name" />
+
+        <EditText
+            android:id="@+id/edthtlnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/blankfield"
+            android:hint="@string/htl_number"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutNumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blankfield"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_loc" />
+
+            <EditText
+                android:id="@+id/edthtlloclat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/blankfield"
+                android:hint="@string/lat"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edthtlloclang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/blankfield"
+                android:hint="@string/lng"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btngetLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/blankbutton"
+            android:padding="5dp"
+            android:text="@string/getLoc"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterhotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutPass"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blankbutton"
+        android:padding="10dp"
+        android:text="@string/Register"
+
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

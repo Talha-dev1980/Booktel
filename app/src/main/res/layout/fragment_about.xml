@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".owner.about">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ownerImg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_avator" />
+
+        <TextView
+            android:id="@+id/tv_ownername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ownerImg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/ownername"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/ratingBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ownername"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingbarAbout"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+
+                android:numStars="5"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ratings"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hotlinfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBarLayout"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTransparent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+
+                android:text="@string/menu_hotel"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnHotelinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:drawableRight="@drawable/ic_keyboard_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ownerinfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotlinfoLayout"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTransparent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+
+                android:text="@string/ownerinfo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnOwner"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:drawableRight="@drawable/ic_keyboard_arrow"
+                 />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ownerinfoLayout"
+            android:background="@color/colorTransparent"
+            android:gravity="left"
+            android:onClick="btnlogout"
+            android:padding="20dp"
+            android:text="@string/logout"
+            android:textColor="@color/colorAccent" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

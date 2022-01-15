@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "290473817507",
+    "firebase_url": "https://booktel-4e121.firebaseio.com",
+    "project_id": "booktel-4e121",
+    "storage_bucket": "booktel-4e121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290473817507:android:c6b7dac40b15649a19d616",
+        "android_client_info": {
+          "package_name": "com.hotel.services.booktel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290473817507-lnsk6h8dd9fuv1t4aec2elam4s2bbon3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotel.services.booktel",
+            "certificate_hash": "e7435eb63ceeca0a91dc32ce2fa4a564d756c1b2"
+          }
+        },
+        {
+          "client_id": "290473817507-0fjcorel5lc2b8o1p9hatuafvnoa579k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWWpdy2e-FvG81qfPkMY2Sqvj3nmnux0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290473817507-0fjcorel5lc2b8o1p9hatuafvnoa579k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

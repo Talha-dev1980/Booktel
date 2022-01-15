@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/join"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_join"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:onClick="btnGuest"
+            android:text="@string/guest"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btn_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:onClick="btnOwner"
+            android:text="@string/owner"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</RelativeLayout>

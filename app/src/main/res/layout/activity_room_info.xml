@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".owner.RoomInfo">
+
+
+    <include
+        android:id="@+id/toolbarRoominfo"
+        layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/headingAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRoominfo"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/menu_hotel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="@string/rent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tv_rentOfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="@string/rentTopay"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_totalrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/dur"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_totalEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/nill"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/room"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/roomnumberRI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingAR"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blankfield"
+            android:hint="@string/roomnumber"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/bed"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nofbeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingAR"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blankfield"
+            android:hint="@string/noofbeds"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/guestnamelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nofbeds"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/blankfield"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:text="@string/guest"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/netlayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestnamelayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:text="@string/net"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/reservedatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rentlayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/reservedat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvreserveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/blankfield"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkedInlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reservedatelayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/checkedin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tvCheckedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/blankfield"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="@string/date"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnCin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/colorTransparent"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <Switch
+            android:id="@+id/manualCheckedIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkedOutlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkedInlayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/checkedOut"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/checkOutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/blankfield"
+            android:gravity="center"
+            android:text="@string/date"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnCout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:visibility="gone"
+            android:background="@color/colorTransparent"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <Switch
+            android:id="@+id/manualCheckedOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imgesShow"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/checkedOutlayout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_roomInfoOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgShow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/blankbutton"
+        android:text="@string/saveChange"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>
+

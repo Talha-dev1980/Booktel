@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">BookTel</string>
+    <string name="join">Join Us As</string>
+    <string name="guest">Guest</string>
+    <string name="owner">Owner</string>
+    <string name="menu_room">Rooms</string>
+    <string name="menu_sales">Sales</string>
+    <string name="menu_hotel">Hotel</string>
+    <string name="menu_about">About</string>
+    <string name="menu_settings">Settings</string>
+    <string name="RegisterHotel">Register Hotel</string>
+    <string name="Register">Register</string>
+    <string name="haveAccount">Already Registered ?</string>
+    <string name="login">Login</string>
+    <string name="getLoc">Get Location</string>
+    <string name="htl_name">Hotel Name</string>
+    <string name="htl_number">Contact</string>
+    <string name="loc">Long, Lat</string>
+    <string name="ownerMail">Owner Mail</string>
+    <string name="passwd">Password</string>
+    <string name="noAccount">Don\'t have An account</string>
+    <string name="title_activity_owner_view">OwnerView</string>
+
+
+    <string name="norroms">No Rooms !</string>
+    <string name="norecords">No Records</string>
+    <string name="addroom">Add Room</string>
+    <string name="roomnumber">Room Number</string>
+    <string name="noofbeds">No Of Beds?</string>
+    <string name="net">Internet</string>
+    <string name="rent">Rent</string>
+    <string name="addimg">Add Image</string>
+    <string name="checkedby">Customer Name</string>
+    <string name="checkedin">Checked In</string>
+    <string name="date">12/08/2020</string>
+    <string name="checkedStatus">Checked In</string>
+    <string name="ratings">4.4 (10k)</string>
+    <string name="Mail">Email</string>
+    <string name="ownerinfo">Owner Info</string>
+    <string name="rooms">Rooms</string>
+    <string name="desp">This is a hotel description, some important info, max 200 charcter</string>
+    <string name="ownername">Owner Name</string>
+    <string name="ownerPhone">Phone</string>
+    <string name="totalearning">Total Earning</string>
+    <string name="duration">Last 30 Days</string>
+    <string name="reservedrooms">Reserved Rooms</string>
+    <string name="checkedrooms">Checked Rooms</string>
+    <string name="anlytics">Analytics</string>
+    <string name="conclusion">Conclusion</string>
+    <string name="monthName">January</string>
+    <string name="ownerReg">Owner Registration</string>
+    <string name="images">images</string>
+    <string name="rating">Ratings</string>
+    <string name="reservedat">Reserved</string>
+    <string name="checkedOut">Checked Out</string>
+    <string name="saveChange">Save Changes</string>
+    <string name="guestReg">Guest Registration</string>
+    <string name="Name">Name</string>
+    <string name="title_activity_guest_view">GuestView</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_guests_view">GuestsView</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="Edit">Edit Profile</string>
+    <string name="call">Call</string>
+    <string name="usingRoom">Using Room</string>
+    <string name="nights">2 Days</string>
+    <string name="history">History</string>
+    <string name="nohistory">No History</string>
+    <string name="changeimg">Change Image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="staydurat">Duration</string>
+    <string name="rentTopay">Total Bill</string>
+    <string name="earnings">Earnings</string>
+    <string name="reserve">Reserve</string>
+    <string name="logout">Log Out</string>
+    <string name="roominfo">Room</string>
+
+    <string name="lng">Longitude</string>
+    <string name="lat">Latitude</string>
+    <string name="AddHotel">Add Hotel</string>
+    <string name="success">Success</string>
+    <string name="successfully">Added Successfully !!</string>
+    <string name="pernight">Per Night</string>
+    <string name="negDuration">Negative Duration</string>
+
+    <string name="Cancel">Cancel</string>
+    <string name="gps_network_not_enabled">Location is  Off</string>
+    <string name="no_internet">NO internet</string>
+    <string name="no_internetS">Internet not available check your internet connnectivity</string>
+    <string name="turnongps">You Can\'t see realtime data</string>
+    <string name="turnonperms">You Can\'t see any thing on map</string>
+    <string name="open_location_settings">Location settings</string>
+    <string name="seeOnmap">Search On Map</string>
+    <string name="hotelname">Hotel Name</string>
+    <string name="allHotels">All Hotels</string>
+    <string name="reservedSuccess">Room reserved successfuly !</string>
+    <string name="guestCheckin">Guest Checked In</string>
+    <string name="chengessaved">Changes Saved!</string>
+    <string name="menu_analytics">Analytics</string>
+    <string name="more">More</string>
+    <string name="dur">Duration</string>
+    <string name="nill">Nil</string>
+    <string name="bed">Beds</string>
+    <string name="room">Room</string>
+    <string name="thismonth">This Month</string>
+    <string name="current">Currently</string>
+    <!--spinner arrays-->
+
+    <string-array name="earning_query">
+        <item>Last 7 days</item>
+        <item>Last 14 days</item>
+        <item>Current month</item>
+        <item>Last month</item>
+    </string-array>
+
+</resources>

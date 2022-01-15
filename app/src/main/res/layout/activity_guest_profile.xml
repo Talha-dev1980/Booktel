@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".guest.guestProfile">
+
+    <include
+        android:id="@+id/toolbarGuestpro"
+
+        layout="@layout/toolbar_layout" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgGP"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_avator" />
+
+    <Button
+        android:id="@+id/btnChangImgGP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/blankbutton"
+        android:padding="10dp"
+        android:text="@string/changeimg"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtNameGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Mail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ownerEmailGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/ownerPhone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPhoneGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/ownerPhone"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSaveinfoGP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/blankbutton"
+        android:text="@string/saveChange"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

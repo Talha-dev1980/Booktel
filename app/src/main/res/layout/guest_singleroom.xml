@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/serviceCard"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="20dp"
+        android:elevation="2dp"
+        android:padding="20dp"
+        app:cardCornerRadius="5dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/serviceCard">
+
+            <ImageView
+                android:id="@+id/serviceThumbGV"
+                android:layout_width="320dp"
+                android:layout_height="180dp"
+
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:src="@drawable/roomsample" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/roominfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/tvroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:maxLength="11"
+                    android:layout_weight="1"
+                    android:text="@string/roomnumber"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvroomnumberGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:maxLength="11"
+                    android:layout_weight="2"
+                    android:text="@string/roomnumber"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+
+                    android:id="@+id/ownerNameGV"
+                    android:layout_toRightOf="@+id/tvroomnumber"
+                    android:gravity="right"
+                    android:maxLength="20"
+                    android:text="@string/ownername"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/reactionView"
+                android:layout_below="@+id/roominfo"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/hotelnamGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:maxLength="20"
+                    android:text="@string/menu_hotel"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:padding="2dp"
+                    android:text="@string/checkedStatus"
+                    android:id="@+id/tv_checkedStatusGV"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reactionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:weightSum="6">
+
+
+                <TextView
+                    android:id="@+id/priceGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+
+                    android:text="@string/pernight"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pernightGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="left"
+                    android:text="4000/-"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingbarGsingleroom"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/tv_ratingsRoomGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/ratings"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

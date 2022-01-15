@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".owner.info">
+
+    <include
+        android:id="@+id/toolbarinfo"
+
+        layout="@layout/toolbar_layout" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgOI"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_avator" />
+
+    <Button
+        android:id="@+id/btnChangImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/blankbutton"
+        android:padding="10dp"
+        android:text="@string/changeimg"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/ownername"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtNameOI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="10dp"
+        android:text="@string/owner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/ownerMail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ownerEmailOI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:text="@string/Mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/ownerPhone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPhoneOI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:hint="@string/ownerPhone" />
+
+    <Button
+        android:id="@+id/btnSaveinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/blankbutton"
+        android:text="@string/saveChange"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
+

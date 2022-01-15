@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.AddRoom">
+
+    <include
+        android:id="@+id/toolbaraddRoom"
+
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/topHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbaraddRoom"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/btn_addimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="0"
+            android:drawableTop="@drawable/ic_add_to_photos"
+            android:text="@string/addimg" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/roomImgsLst"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roominfolayput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topHeader"
+        android:layout_margin="20dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtRoomno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blankfield"
+            android:hint="@string/roomnumber"
+            android:padding="5dp"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtRoombeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blankfield"
+            android:hint="@string/noofbeds"
+            android:padding="5dp"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/netlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topHeader"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+
+        <CheckBox
+            android:id="@+id/checkboxNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/net"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whichHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roominfolayput"
+        android:layout_margin="10dp"
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/menu_hotel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/htlsSpinnerAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whichHotel"
+        android:layout_margin="10dp"
+        android:background="@drawable/blankfield"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/rent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/rentperNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/blankfield"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="Rs.2500/-"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAddRoomAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rentlayout"
+        android:layout_margin="20dp"
+        android:background="@drawable/blankbutton"
+        android:text="@string/addroom"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

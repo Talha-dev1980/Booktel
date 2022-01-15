@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.EarningPlot">
+
+    <include
+        android:id="@+id/toolbarEarningplot"
+        layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/tvearningEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarEarningplot"
+        android:layout_margin="10dp"
+        android:text="@string/totalearning"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_MonthName"
+        android:text="@string/monthName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_below="@+id/lineChart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/lineChart"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tvearningEP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/tvconclusion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineChart"
+        android:layout_margin="20dp"
+        android:text="@string/conclusion"
+        android:textColor="@color/colorAccent" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/statsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvconclusion">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

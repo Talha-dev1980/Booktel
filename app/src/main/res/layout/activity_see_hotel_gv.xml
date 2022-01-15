@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".guest.seeHotelGV">
+
+    <include
+        android:id="@+id/toolbarHotelinfoGV"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/guestImageGV"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_hotel" />
+
+        <TextView
+            android:id="@+id/tv_hotelOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guestImageGV"
+            android:gravity="center"
+            android:text="@string/Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/blankbutton"
+            android:padding="10dp"
+            android:text="@string/owner"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="@string/rooms"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_totalroms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/earnings"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_totalEarnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="0/-"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rooms"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/norroms"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <!-- <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:onClick="btnGuestroominfo"
+             android:padding="20dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="95dp"
+                     android:layout_height="95dp"
+                     android:layout_margin="10dp"
+                     android:src="@drawable/roomsample" />
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center">
+
+                     <TextView
+                         android:id="@+id/inUseRoomno"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/roomnumber"
+                         android:textColor="@color/colorPrimary"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/inuseHtlnam"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/inUseRoomno"
+                         android:layout_marginTop="5dp"
+                         android:text="@string/menu_hotel"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/inuseratings"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="10dp"
+                         android:text="@string/ratings"
+                         android:textColor="@color/colorBlack" />
+
+                     <TextView
+                         android:id="@+id/inuseDuration"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/inuseHtlnam"
+                         android:layout_marginTop="5dp"
+                         android:text="@string/nights"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="14sp" />
+                 </RelativeLayout>
+             </LinearLayout>
+         </androidx.cardview.widget.CardView>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hotelroomscHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
